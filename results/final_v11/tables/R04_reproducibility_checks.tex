@@ -1,0 +1,30 @@
+\begin{table}[h]
+\caption{TODO: write your own caption}\label{tab:R04-reproducibility-checks}
+\scriptsize
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+check & result & source \\
+\midrule
+Validation of all sources in this notebook & 347 OK, 0 missing, 0 inconsistent, 4 notes & records/\allowbreak{}validation\_\allowbreak{}report.csv \\
+NB3: reloaded v2 checkpoints reproduce saved probabilities & max diff 0; same predictions True & NB3 integrity\_\allowbreak{}check.csv \\
+NB8 MOSEI: M2 seed 42 retrained bit-identically; references reused & identical True, reuse True, torch 2.14.1+cpu, cpu Intel(R) Xeon(R) CPU @ 2.20GHz & NB8 mosei/\allowbreak{}reference\_\allowbreak{}check.json \\
+NB8 MOSI: M2 seed 42 retrained bit-identically; references reused & identical True, reuse True, torch 2.14.1+cpu, cpu Intel(R) Xeon(R) CPU @ 2.20GHz & NB8 mosi/\allowbreak{}reference\_\allowbreak{}check.json \\
+NB8b: loaded models reproduce NB8 predictions & max diff 3.6e-07 & NB8b load\_\allowbreak{}checks.csv \\
+NB9: Amazon split fingerprint = Notebook 1's & OK c3a53bf95269b4f6e8a490d0d85be4f9 & this notebook \\
+NB8: MOSEI M4 seed 42 macro-F1 recomputed from predictions & OK saved 0.637319 vs recomputed 0.637319 & this notebook \\
+NB8: MOSI M4 seed 42 macro-F1 recomputed from predictions & OK saved 0.572261 vs recomputed 0.572261 & this notebook \\
+NB9: Amazon R2 seed 42 macro-F1 recomputed & OK saved 0.817393 vs recomputed 0.817393 & this notebook \\
+NB10: Flipkart split fingerprint = recorded & OK be132fc7adab & this notebook \\
+NB10: Flipkart R2 seed 42 macro-F1 recomputed & OK saved 0.722814 vs recomputed 0.722814 & this notebook \\
+NB10: Flipkart source file hashes matched at run time & OK [True, True] & this notebook \\
+NB10: IMDB split fingerprint = recorded & OK fcb1ebf0b89e & this notebook \\
+NB10: IMDB R2 seed 42 macro-F1 recomputed & OK saved 0.910972 vs recomputed 0.910972 & this notebook \\
+NB10: IMDB source file hashes matched at run time & OK [True, True] & this notebook \\
+NB10: Yelp split fingerprint = recorded & OK 9830e04a474f & this notebook \\
+NB10: Yelp R2 seed 42 macro-F1 recomputed & OK saved 0.779588 vs recomputed 0.779588 & this notebook \\
+NB10: Yelp source file hashes matched at run time & OK [True, True] & this notebook \\
+Seeds & 42, 43, 44 in every experiment (checked above) & per-seed tables \\
+RAM of the experiment machines & not recorded & — \\
+\bottomrule
+\end{tabularx}
+\end{table}

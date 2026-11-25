@@ -1,0 +1,8 @@
+notebook,scope,settings (as saved),seeds,data file
+NB2,MOSEI,"D_MODEL=128; EPOCHS=30; PATIENCE=6; BATCH_SIZE=64; LR=0.0005; MOD_DROPOUT=0.3; MASK_SEEDS=[7, 8, 9, 10, 11]; N_BOOT=10000; MISSING_RATES=[0.3, 0.5, 0.7]","[42, 43, 44]",aligned_50.pkl
+NB6,MOSEI (v2 settings reused by NB3–NB6),D_MODEL=128; EPOCHS=30; PATIENCE=6; BATCH_SIZE=64; LR=0.0005; MOD_DROPOUT=0.3; n_train=16326,"[42, 43, 44]",aligned_50.pkl
+NB7,MOSI,D_MODEL=128; EPOCHS=30; PATIENCE=6; BATCH_SIZE=64; LR=0.0005; MOD_DROPOUT=0.3; threads=4,"[42, 43, 44]",aligned_50.pkl
+NB8,MOSI,D_MODEL=128; EPOCHS=30; PATIENCE=6; BATCH_SIZE=64; LR=0.0005; MOD_DROPOUT=0.3; threads=4; lambda1=0.3,"[42, 43, 44]",aligned_50.pkl
+NB8,MOSEI,D_MODEL=128; EPOCHS=30; PATIENCE=6; BATCH_SIZE=64; LR=0.0005; MOD_DROPOUT=0.3; threads=4; lambda1=0.3,"[42, 43, 44]",aligned_50.pkl
+NB9,Amazon text + heads,MODEL_NAME=roberta-base; N_PER_CLASS_PER_CAT=2000; MAX_LEN=128; EPOCHS=2; BATCH_SIZE=32; LR_ENCODER=2e-05; LR_NEW=0.0001; GDRO_ETA=0.01; IMG_DROPOUT=0.3; D_HEAD=256; HEAD_EPOCHS=30; HEAD_PATIENCE=5; HEAD_LR=0.001; HEAD_BS=64; CLIP_NAME=openai/clip-vit-base-patch32,"[42, 43, 44]",split.csv (NB9)
+NB10,"Flipkart, IMDB, Yelp",MODEL_NAME=roberta-base; MAX_LEN=128; EPOCHS=2; BATCH_SIZE=32; LR_ENCODER=2e-05; LR_NEW=0.0001,"[42, 43, 44]",per-dataset sizes: see records/all_run_configs_verbatim.json

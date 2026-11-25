@@ -1,0 +1,17 @@
+dataset,model,macro-F1 (%),descr. 95% interval (%),Acc-2 non-neutral (%),source
+MOSEI,M1 text-only,63.19 ± 0.37,"[61.54, 64.85]",83.85 ± 0.46,NB2 checkpoints
+MOSEI,M2 RMSR adaptation,62.27 ± 0.53,"[60.38, 64.00]",82.96 ± 0.27,NB8 preds
+MOSEI,M3,62.87 ± 1.05,"[60.93, 64.71]",83.49 ± 0.39,NB8 preds
+MOSEI,M4,63.45 ± 0.50,"[61.66, 65.14]",83.69 ± 0.48,NB8 preds
+MOSEI,A2 = M2 + modality dropout,62.66 ± 0.35,"[60.91, 64.39]",82.74 ± 0.84,NB8 preds
+MOSEI,B3 = M4 with pooled attention,63.22 ± 0.59,"[61.35, 64.89]",83.47 ± 0.21,NB8 preds
+MOSEI,Late fusion M1+U3,63.86 ± 0.05,"[62.11, 65.46]",84.22 ± 0.42,NB5 LF probabilities
+MOSEI,H2 head re-fit on M4,63.61 ± 0.73,"[61.78, 65.41]",83.67 ± 0.35,NB6 heads
+MOSI,M1 text-only,56.29 ± 3.12,"[51.04, 61.12]",78.61 ± 1.30,NB7 checkpoints
+MOSI,M2 RMSR adaptation,53.50 ± 3.56,"[47.71, 59.26]",76.58 ± 2.22,NB8 preds
+MOSI,M3,52.47 ± 1.41,"[48.18, 56.80]",77.74 ± 1.25,NB8 preds
+MOSI,M4,56.96 ± 0.61,"[52.44, 61.17]",79.12 ± 0.15,NB8 preds
+MOSI,A2 = M2 + modality dropout,55.05 ± 2.28,"[50.00, 60.49]",78.05 ± 2.05,NB8 preds
+MOSI,B3 = M4 with pooled attention,57.86 ± 1.18,"[52.85, 62.33]",79.17 ± 0.88,NB8 preds
+MOSI,Late fusion M1+U3,56.91 ± 2.77,n/a (predictions not saved),n/a,NB7 results_per_seed.csv
+MOSI,H2 head re-fit on M4,57.52 ± 1.77,"[52.78, 61.87]",79.47 ± 0.23,NB7 heads

@@ -1,0 +1,11 @@
+{
+ "C1_V": "CONSISTENT, INCONCLUSIVE",
+ "C2_V": "CONFIRMED",
+ "C3_V": "CONFIRMED (no conditional boundaries)",
+ "C5_V": "no clear selection effect",
+ "C1_A+V": "CONSISTENT, INCONCLUSIVE",
+ "C2_A+V": "CONFIRMED",
+ "C3_A+V": "CONFIRMED (no conditional boundaries)",
+ "C5_A+V": "no clear selection effect",
+ "C4_T+A+V": "CONFIRMED (full condition unchanged)"
+}

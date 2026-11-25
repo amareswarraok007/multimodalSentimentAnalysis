@@ -1,0 +1,221 @@
+{
+  "NB2/run_info.json": {
+    "config": {
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "SEEDS": [
+        42,
+        43,
+        44
+      ],
+      "MASK_SEEDS": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "N_BOOT": 10000,
+      "MISSING_RATES": [
+        0.3,
+        0.5,
+        0.7
+      ]
+    }
+  },
+  "NB3/run_info.json": {
+    "v2_train_config": {
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+      "n_train": 16326
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "NB4/run_info.json": {
+    "v2_train_config": {
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+      "n_train": 16326
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "threads": 4,
+    "n_boot": 10000
+  },
+  "NB5/run_info.json": {
+    "v2_train_config": {
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+      "n_train": 16326
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "threads": 4,
+    "n_boot": 10000,
+    "run_d3": false
+  },
+  "NB6/run_info.json": {
+    "v2_train_config": {
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+      "n_train": 16326
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n_boot": 10000,
+    "margin_pp": 1.0
+  },
+  "NB7/run_info.json": {
+    "config": {
+      "D_MODEL": 128,
+      "EPOCHS": 30,
+      "PATIENCE": 6,
+      "BATCH_SIZE": 64,
+      "LR": 0.0005,
+      "MOD_DROPOUT": 0.3,
+      "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSI/Processed/aligned_50.pkl",
+      "SEEDS": [
+        42,
+        43,
+        44
+      ],
+      "threads": 4
+    },
+    "n_boot": 10000
+  },
+  "NB8/run_info_20261124_151959.json": {
+    "config": {
+      "MOSI": {
+        "D_MODEL": 128,
+        "EPOCHS": 30,
+        "PATIENCE": 6,
+        "BATCH_SIZE": 64,
+        "LR": 0.0005,
+        "MOD_DROPOUT": 0.3,
+        "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSI/Processed/aligned_50.pkl",
+        "SEEDS": [
+          42,
+          43,
+          44
+        ],
+        "threads": 4
+      },
+      "MOSEI": {
+        "D_MODEL": 128,
+        "EPOCHS": 30,
+        "PATIENCE": 6,
+        "BATCH_SIZE": 64,
+        "LR": 0.0005,
+        "MOD_DROPOUT": 0.3,
+        "DATA_PATH": "/content/drive/MyDrive/datasets/CMU-MOSEI/aligned_50.pkl",
+        "SEEDS": [
+          42,
+          43,
+          44
+        ],
+        "threads": 4
+      }
+    },
+    "lambda1": 0.3,
+    "n_boot": 10000,
+    "margin_pp": 1.0
+  },
+  "NB9/run_info_20261124_205258.json": {
+    "config": {
+      "MODEL_NAME": "roberta-base",
+      "N_PER_CLASS_PER_CAT": 2000,
+      "MAX_LEN": 128,
+      "EPOCHS": 2,
+      "BATCH_SIZE": 32,
+      "LR_ENCODER": 2e-05,
+      "LR_NEW": 0.0001,
+      "GDRO_ETA": 0.01,
+      "IMG_DROPOUT": 0.3,
+      "D_HEAD": 256,
+      "HEAD_EPOCHS": 30,
+      "HEAD_PATIENCE": 5,
+      "HEAD_LR": 0.001,
+      "HEAD_BS": 64,
+      "CLIP_NAME": "openai/clip-vit-base-patch32"
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA L4"
+  },
+  "NB10/run_info_20261124_215934.json": {
+    "config": {
+      "MODEL_NAME": "roberta-base",
+      "MAX_LEN": 128,
+      "EPOCHS": 2,
+      "BATCH_SIZE": 32,
+      "LR_ENCODER": 2e-05,
+      "LR_NEW": 0.0001,
+      "SIZES": {
+        "Flipkart": {
+          "total": 50000,
+          "valid": 5000,
+          "test": 5000
+        },
+        "IMDB": {
+          "valid_frac": 0.1
+        },
+        "Yelp": {
+          "train_pool": 90000,
+          "valid": 10000,
+          "test": 10000
+        }
+      }
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA L4"
+  }
+}

@@ -1,0 +1,12 @@
+dataset,pairing,identifiers compared,result,detail
+MOSEI,NB2 vs NB8 test set,yes (test_ids.csv),OK,labels match (n 4659/4659); identifiers identical in order
+MOSEI,NB4 vs NB8 test set,yes (test_ids.csv),OK,labels match (n 4659/4659); identifiers identical in order
+MOSEI,NB5 vs NB8 test set,yes (test_ids.csv),OK,labels match (n 4659/4659); identifiers identical in order
+MOSEI,NB6 vs NB8 test set,yes (test_ids.csv),OK,labels match (n 4659/4659); identifiers identical in order
+MOSI,NB7 vs NB8 test set,yes (test_ids.csv),OK,labels match (n 686/686); identifiers identical in order
+MOSEI,predictions vs identifiers within each notebook,by construction,not separately verifiable,each notebook saved test_ids.csv from the same data order it predicted on; prediction files carry no identifiers; supported by exact recomputation of saved scores (see R04)
+MOSI,predictions vs identifiers within each notebook,by construction,not separately verifiable,each notebook saved test_ids.csv from the same data order it predicted on; prediction files carry no identifiers; supported by exact recomputation of saved scores (see R04)
+Amazon,NB9 predictions vs split.csv test rows,no (prediction files carry no identifiers),by construction,NB9 saved split.csv in its row order and asserted row order ('row order mismatch' check) at run time; supported by exact recomputation of a saved score; not independently verifiable here
+Flipkart,NB10 predictions vs data.pkl test rows,no (prediction files carry no identifiers),by construction,"predictions follow the saved frame's row order; the split fingerprint sorts keys, so it does NOT verify order; supported by exact recomputation of a saved score"
+IMDB,NB10 predictions vs data.pkl test rows,no (prediction files carry no identifiers),by construction,"predictions follow the saved frame's row order; the split fingerprint sorts keys, so it does NOT verify order; supported by exact recomputation of a saved score"
+Yelp,NB10 predictions vs data.pkl test rows,no (prediction files carry no identifiers),by construction,"predictions follow the saved frame's row order; the split fingerprint sorts keys, so it does NOT verify order; supported by exact recomputation of a saved score"

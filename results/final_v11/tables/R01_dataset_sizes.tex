@@ -1,0 +1,16 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:R01-dataset-sizes}
+\scriptsize
+\begin{tabularx}{\textheight}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xrrrll>{\raggedright\arraybackslash}X}
+\toprule
+dataset & modalities & train & valid & test & test groups & classes (test neg/\allowbreak{}neu/\allowbreak{}pos) & source \\
+\midrule
+MOSEI & text, audio, video (pre-extracted aligned\_\allowbreak{}50 features) & 16326 & 1871 & 4659 & 676 videos & 1350/\allowbreak{}1025/\allowbreak{}2284 & NB8 label files; train: NB3--NB6 run\_\allowbreak{}info (n\_\allowbreak{}train) \\
+MOSI & text, audio, video (pre-extracted aligned\_\allowbreak{}50 features) & 1284 & 229 & 686 & 31 videos & 379/\allowbreak{}30/\allowbreak{}277 & NB8 label files; train: MOSI data file (aligned\_\allowbreak{}50.pkl) \\
+Amazon Reviews 2023 (Fashion + Beauty, with photo) & text, photo & 8367 & 1800 & 1833 & 1585 products & 588/\allowbreak{}617/\allowbreak{}628 & NB9 split.csv \\
+Flipkart & text & 40000 & 5000 & 5000 & individual reviews & 1006/\allowbreak{}246/\allowbreak{}3748 & NB10 Flipkart/\allowbreak{}validation\_\allowbreak{}report.json \\
+IMDB & text & 22414 & 2490 & 24678 & individual reviews & 12266/\allowbreak{}—/\allowbreak{}12412 & NB10 IMDB/\allowbreak{}validation\_\allowbreak{}report.json \\
+Yelp & text & 79999 & 10001 & 10000 & individual reviews & 3998/\allowbreak{}2020/\allowbreak{}3982 & NB10 Yelp/\allowbreak{}validation\_\allowbreak{}report.json \\
+\bottomrule
+\end{tabularx}
+\end{sidewaystable}

@@ -1,0 +1,17 @@
+family,id,question,with,without,metric,effect_pp,per_seed_pp,lo_pp,hi_pp,p,p_holm,verdict
+text,T1,Conventional cleaning vs raw text,R2,R1,macro_f1,8.127315553981818,"+8.39, +7.78, +8.21",6.331651096417243,9.931403262767683,0.00019998000199980003,0.0007999200079992001,HELPS
+text,T2,ECCM vs raw text,R3,R2,macro_f1,-0.13518954989997223,"+0.16, -0.24, -0.32",-0.8824213177925619,0.6423245585580338,0.6871312868713129,1.0,negligible (CI within ±1 pp)
+text,T3,Group-DRO: overall cost/benefit,R4,R3,macro_f1,0.014925061434241845,"-0.42, +0.47, +0.00",-0.7583065995535893,0.7010740461207962,0.9295070492950704,1.0,negligible (CI within ±1 pp)
+text,T4,Group-DRO: worst category,R4,R3,worst_group_f1,0.10342381152075308,"-0.77, +1.04, +0.04",-1.153862800197007,1.227417790693305,0.8327167283271673,1.0,no detectable effect
+fusion,P1,Photo helps (main model),F1,T0,macro_f1,0.06016407144775101,"-0.07, -0.55, +0.80",-0.738013061556886,0.8929774748537708,0.8645135486451355,1.0,negligible (CI within ±1 pp)
+fusion,P2,Real review-photo pairing,F1,SHUF,macro_f1,-0.25782065415430966,"-0.75, -0.30, +0.27",-1.0050961812800945,0.4027165968556301,0.46735326467353266,1.0,no detectable effect
+fusion,P3,Concatenation vs text only,CAT,T0,macro_f1,-0.3583757397843593,"-0.44, -0.47, -0.16",-1.0219659372385426,0.30732555719333204,0.2665733426657334,1.0,no detectable effect
+fusion,P4,Token attention design vs paper's RMSR,F2,F1,macro_f1,0.1546471719547619,"+0.33, +0.71, -0.57",-0.6524141867580229,0.9797700694819808,0.7023297670232976,1.0,negligible (CI within ±1 pp)
+fusion,P5,Lightweight pooled vs paper's RMSR,F3,F1,macro_f1,0.016033052894970368,"+0.39, +0.53, -0.87",-0.9718340223536461,0.940963385882111,0.9719028097190281,1.0,negligible (CI within ±1 pp)
+fusion,P6,Concatenation vs paper's RMSR,CAT,F1,macro_f1,-0.41853981123211037,"-0.37, +0.08, -0.96",-1.25021177915512,0.35875899004116324,0.28657134286571345,1.0,no detectable effect
+secondary,M-F1,F1: all photos hidden vs none hidden,F1 (100% hidden),F1 (0%),macro_f1,-0.20562516434314096,"+0.15, -0.23, -0.53",-0.7184729416098254,0.2818133772046487,0.39636036396360363,1.0,negligible (CI within ±1 pp)
+secondary,M-F2,F2: all photos hidden vs none hidden,F2 (100% hidden),F2 (0%),macro_f1,0.0,"+0.00, +0.00, +0.00",0.0,0.0,1.0,1.0,negligible (CI within ±1 pp)
+secondary,M-F3,F3: all photos hidden vs none hidden,F3 (100% hidden),F3 (0%),macro_f1,0.0,"+0.00, +0.00, +0.00",0.0,0.0,1.0,1.0,negligible (CI within ±1 pp)
+secondary,M-CAT,CAT: all photos hidden vs none hidden,CAT (100% hidden),CAT (0%),macro_f1,-0.05463236482364057,"+0.39, -0.48, -0.07",-0.691680284948249,0.5843371805811663,0.8645135486451355,1.0,negligible (CI within ±1 pp)
+secondary,M-SHUF,SHUF: all photos hidden vs none hidden,SHUF (100% hidden),SHUF (0%),macro_f1,0.10398348600924034,"-0.17, +0.46, +0.02",-0.3415986470340057,0.6825315523460819,0.690930906909309,1.0,negligible (CI within ±1 pp)
+secondary,S-F1,F1: real test photos vs within-category shuffled test photos (no training),F1 (real photos),F1 (shuffled test photos),macro_f1,-0.05200474566735558,"+0.00, -0.36, +0.20",-0.38111867065950433,0.2795368775499869,0.7347265273472653,1.0,negligible (CI within ±1 pp)

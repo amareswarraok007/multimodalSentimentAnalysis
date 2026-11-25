@@ -1,0 +1,22 @@
+# data and model artefacts are never committed (see docs/dataset_access.md)
+datasets/
+emofar_results/
+*.pkl
+*.csd
+*.jsonl
+*.parquet
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.zip
+# environment and caches
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.venv/
+.DS_Store
+# keep the copied Notebook 11 outputs
+!results/final_v11/**

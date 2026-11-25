@@ -1,0 +1,5 @@
+dataset / pair,K1,K2,K3,K4,K5,K6,pre-registered reading
+MOSEI A0 vs M2,yes,yes,no,no,no,yes,Mixed pattern: see the tables; no single reading applies.
+MOSEI B6 vs M4,yes,yes,no,no,no,yes,Mixed pattern: see the tables; no single reading applies.
+MOSI A0 vs M2,no,no,no,no,no,yes,Alignment is not strong (K1 fails): the collapse hypothesis does not apply.
+MOSI B6 vs M4,no,no,no,no,no,no,Alignment is not strong (K1 fails): the collapse hypothesis does not apply.

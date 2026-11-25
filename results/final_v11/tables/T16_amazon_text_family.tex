@@ -1,0 +1,14 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:T16-amazon-text-family}
+\scriptsize
+\begin{tabularx}{\textheight}{l>{\raggedright\arraybackslash}Xllll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+id & question & metric & effect [95\% CI] (pp) & per\_\allowbreak{}seed\_\allowbreak{}pp & Holm p & verdict & evidence \\
+\midrule
+T1 & Conventional cleaning vs raw text & macro\_\allowbreak{}f1 & +8.13 [+6.33, +9.93] & +8.39, +7.78, +8.21 & 0.001 & HELPS & Supported \\
+T2 & ECCM vs raw text & macro\_\allowbreak{}f1 & -0.14 [-0.88, +0.64] & +0.16, -0.24, -0.32 & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) \\
+T3 & Group-DRO: overall cost/\allowbreak{}benefit & macro\_\allowbreak{}f1 & +0.01 [-0.76, +0.70] & -0.42, +0.47, +0.00 & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) \\
+T4 & Group-DRO: worst category & worst\_\allowbreak{}group\_\allowbreak{}f1 & +0.10 [-1.15, +1.23] & -0.77, +1.04, +0.04 & 1.000 & no detectable effect & Inconclusive \\
+\bottomrule
+\end{tabularx}
+\end{sidewaystable}

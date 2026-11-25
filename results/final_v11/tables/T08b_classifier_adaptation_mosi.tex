@@ -1,0 +1,22 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:T08b-classifier-adaptation-mosi}
+\scriptsize
+\resizebox{\textheight}{!}{%
+\begin{tabularx}{1.10\textheight}{lllllll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+check & condition & comparison & effect [95\% CI] (pp) & per\_\allowbreak{}seed\_\allowbreak{}pp & raw p & Holm p (post hoc, all 9 NB7 checks) & pre-registered verdict & evidence \\
+\midrule
+C1 & V & Dedicated model $-$ M4 own & +2.89 [-1.98, +8.04] & +6.68, -0.72, +2.72 & 0.218 & 1.000 & CONSISTENT, INCONCLUSIVE & Inconclusive \\
+C2 & V & H2 $-$ M4 own & +3.59 [+0.45, +6.71] & +3.68, +3.55, +3.53 & 0.030 & 0.238 & CONFIRMED & Nominal only (CI excludes 0 without correction; not significant after post-hoc Holm) \\
+C3 & V & H4 $-$ H2 & +0.15 [-4.80, +4.96] & +0.42, -2.41, +2.43 & 0.895 & 1.000 & CONFIRMED (no conditional boundaries) & Inconclusive (rule passed on non-significance; not equivalence) \\
+C5 & V & H1 $-$ H1F & +0.80 [-1.13, +2.84] & +0.00, +1.17, +1.22 & 0.318 & 1.000 & no clear selection effect & Inconclusive \\
+C1 & A+V & Dedicated model $-$ M4 own & +4.60 [-0.34, +9.31] & +4.34, +2.14, +7.30 & 0.064 & 0.448 & CONSISTENT, INCONCLUSIVE & Inconclusive \\
+C2 & A+V & H2 $-$ M4 own & +6.58 [+3.41, +10.30] & +7.19, +6.74, +5.82 & 0.000 & 0.004 & CONFIRMED & Supported (pre-registered; CI excludes 0; survives post-hoc Holm) \\
+C3 & A+V & H4 $-$ H2 & +0.76 [-4.40, +4.89] & +2.27, -3.77, +3.78 & 0.704 & 1.000 & CONFIRMED (no conditional boundaries) & Inconclusive (rule passed on non-significance; not equivalence) \\
+C5 & A+V & H1 $-$ H1F & +0.82 [-1.70, +3.18] & +0.00, -0.29, +2.76 & 0.498 & 1.000 & no clear selection effect & Inconclusive \\
+C4 & T+A+V & H2 $-$ M4 own & +0.56 [-1.42, +2.64] & -1.21, +2.08, +0.82 & 0.579 & 1.000 & CONFIRMED (full condition unchanged) & Descriptive (point estimate within $\pm$1 pp; not equivalence) \\
+\bottomrule
+\end{tabularx}
+}
+\par\smallskip{\scriptsize Note: NB7 rules (fixed before MOSI results) used no multiplicity correction: C1/\allowbreak{}C2 CONFIRMED = same sign as MOSEI and CI excludes 0; C3 CONFIRMED = H4 $-$ H2 not shown to exceed +1 pp (absence of evidence, labelled Inconclusive); C4 CONFIRMED = point estimate within $\pm$1 pp. The Holm column is a post-hoc correction of NB7's saved raw p-values over all 9 tests NB7 ran (the convention of NB8--NB10); it is not part of NB7's pre-registered rule. With the narrowest family (C2's two conditions only) Holm p would be: V 0.030, A+V 0.001. Related published work (e.g. SCBC) exists; its publication details and overlap are not verified.\par}
+\end{sidewaystable}

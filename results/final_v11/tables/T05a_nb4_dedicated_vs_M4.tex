@@ -1,0 +1,16 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:T05a-nb4-dedicated-vs-M4}
+\scriptsize
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{%
+\begin{tabular}{lrrrllrr}
+\toprule
+modalities & dedicated macro-F1 (fraction) & M4 macro-F1 (fraction) & mean\_\allowbreak{}diff\_\allowbreak{}pp & per\_\allowbreak{}seed\_\allowbreak{}pp & seed+video\_\allowbreak{}CI95\_\allowbreak{}pp & seed+video\_\allowbreak{}p & seed+video\_\allowbreak{}p\_\allowbreak{}holm \\
+\midrule
+A & 0.4106 & 0.4002 & 1.044 & +1.18, +1.59, +0.37 & [-0.40, +2.46] & 0.142 & 0.142 \\
+V & 0.4186 & 0.3945 & 2.406 & +2.90, +3.00, +1.32 & [+0.74, +4.05] & 0.006999 & 0.021 \\
+A+V & 0.4374 & 0.4176 & 1.983 & +1.60, +2.40, +1.95 & [+0.44, +3.63] & 0.0118 & 0.0236 \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip{\scriptsize Note: Exploratory: MOSEI test set reused; original columns preserved (scores as fractions, differences in pp).\par}
+\end{sidewaystable}

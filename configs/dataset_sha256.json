@@ -1,0 +1,10 @@
+{
+  "CMU-MOSEI/aligned_50.pkl": "45eccfb748a87c80ecab9bfac29582e7b1466bf6605ff29d3b338a75120bf791",
+  "CMU-MOSI/Processed/aligned_50.pkl": "d3994fd25681f9c7ad6e9c6596a6fe9b4beb85ff7d478ba978b124139002e5f9",
+  "Flipkart/train.json": "4f53e0a45bd5b61fcb7cd43884c1561122ce17d4aea9334b551055a99ffa9943",
+  "Flipkart/test.json": "9cb489adce35ba808b3d898a7907b02329a652ffaae08aff7f7c11706b1ab801",
+  "IMDB/train-00000-of-00001.parquet": "db47d16b5c297cc0dd625e519c81319c24c9149e70e8496de5475f6fa928342c",
+  "IMDB/test-00000-of-00001.parquet": "b52e26e2f872d282ffac460bf9770b25ac6f102cda0e6ca7158df98c94e8b3da",
+  "Yelp/train-00000-of-00001.parquet": "da3ca3dcc52b1e2e44195b53668610d645a59010a985dd45aa12e1109cd44601",
+  "Yelp/test-00000-of-00001.parquet": "bf06d5969bff93ecd4a6d4b330643761ce108b42e9b8a894cf82c9df02a08540"
+}

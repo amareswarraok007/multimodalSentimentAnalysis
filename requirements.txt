@@ -1,0 +1,14 @@
+# Versions recorded by the experiment runs (run_info*.json; NB11 table R02). Runs used Google Colab.
+# Fusion notebooks NB02v2–NB08b (CPU, Python 3.13.18):
+torch==2.14.1            # CPU build (+cpu) for NB02v2–NB08b; CUDA build (+cu130) for NB09/NB10
+numpy==2.4.6
+pandas==2.2.3
+scikit-learn==1.6.1
+# Text / photo notebooks NB09, NB10 (NVIDIA L4):
+transformers==5.22.1
+# Not recorded by the runs (Colab defaults were used): matplotlib, huggingface_hub, Pillow, requests, pyarrow
+matplotlib
+huggingface_hub
+Pillow
+requests
+pyarrow

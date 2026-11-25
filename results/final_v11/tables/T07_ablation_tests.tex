@@ -1,0 +1,39 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:T07-ablation-tests}
+\scriptsize
+\resizebox{\textheight}{!}{%
+\begin{tabularx}{1.42\textheight}{l>{\raggedright\arraybackslash}Xlll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xll>{\raggedright\arraybackslash}Xl}
+\toprule
+id & component & measure & MOSEI effect [95\% CI] (pp) & MOSEI Holm p (26) & verdict & evidence (MOSEI) & MOSI effect [95\% CI] (pp) & MOSI Holm p (26) & replication & MOSI Holm p (repl.) \\
+\midrule
+C01 & Eq. 15 (published) on M2 & P1 T+A+V & -0.07 [-0.86, +0.72] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & +1.06 [-1.12, +4.67] & 1.000 & - & — \\
+C01 & Eq. 15 (published) on M2 & P2 mean of 7 & -6.97 [-8.25, -5.92] & 0.005 & HURTS & Supported & +0.28 [-1.25, +2.20] & 1.000 & opposite direction & 0.797 \\
+C02 & Gate masking on M2, no dropout (test-time only) & P1 T+A+V & +0.00 [+0.00, +0.00] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & +0.00 [+0.00, +0.00] & 1.000 & - & — \\
+C02 & Gate masking on M2, no dropout (test-time only) & P2 mean of 7 & +0.73 [-0.09, +1.45] & 1.000 & no detectable effect & Inconclusive & +0.50 [-0.68, +1.81] & 1.000 & - & — \\
+C03 & Modality dropout on M2 & P1 T+A+V & +0.39 [-0.46, +1.44] & 1.000 & no detectable effect & Inconclusive & +1.55 [-4.55, +7.07] & 1.000 & - & — \\
+C03 & Modality dropout on M2 & P2 mean of 7 & +2.84 [+1.17, +4.33] & 0.015 & HELPS & Supported & +1.61 [-1.03, +4.74] & 1.000 & same direction, not confirmed & 0.538 \\
+C04 & Masking + dropout on M2 (TWO changes) & P1 T+A+V & +0.34 [-0.73, +1.59] & 1.000 & no detectable effect & Inconclusive & +4.02 [+0.01, +8.78] & 1.000 & MOSI raw p<.05 only (exploratory) & — \\
+C04 & Masking + dropout on M2 (TWO changes) & P2 mean of 7 & +2.34 [+0.75, +3.70] & 0.092 & no detectable effect & Inconclusive & +2.69 [+0.74, +5.14] & 0.135 & MOSI raw p<.05 only (exploratory) & — \\
+C05 & Gate masking on M2 when dropout is used & P1 T+A+V & -0.05 [-0.75, +0.72] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & +2.47 [-1.17, +6.74] & 1.000 & - & — \\
+C05 & Gate masking on M2 when dropout is used & P2 mean of 7 & -0.50 [-0.93, -0.02] & 0.916 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & +1.08 [-0.55, +2.96] & 1.000 & - & — \\
+C06 & 2-layer classifier on M2 & P1 T+A+V & +0.95 [+0.23, +1.80] & 0.255 & no detectable effect & Inconclusive & +1.63 [-1.89, +6.09] & 1.000 & - & — \\
+C06 & 2-layer classifier on M2 & P2 mean of 7 & +0.34 [-1.12, +1.71] & 1.000 & no detectable effect & Inconclusive & +0.89 [-1.18, +2.94] & 1.000 & - & — \\
+C07 & Modality dropout on M3 & P1 T+A+V & +0.58 [-1.11, +2.11] & 1.000 & no detectable effect & Inconclusive & +4.49 [+1.54, +8.06] & 0.078 & MOSI raw p<.05 only (exploratory) & — \\
+C07 & Modality dropout on M3 & P2 mean of 7 & +1.52 [+0.62, +2.37] & 0.091 & no detectable effect & Inconclusive & +2.78 [+0.14, +5.62] & 0.898 & MOSI raw p<.05 only (exploratory) & — \\
+C08 & Gate masking in M4 & P1 T+A+V & +0.69 [-0.77, +2.25] & 1.000 & no detectable effect & Inconclusive & +0.32 [-1.77, +2.31] & 1.000 & - & — \\
+C08 & Gate masking in M4 & P2 mean of 7 & +0.87 [-0.07, +1.87] & 1.000 & no detectable effect & Inconclusive & -0.59 [-2.62, +1.54] & 1.000 & - & — \\
+C09 & Linear gate vs Eq. 11-12 gate & P1 T+A+V & +0.51 [-0.32, +1.39] & 1.000 & no detectable effect & Inconclusive & +2.07 [-1.23, +5.49] & 1.000 & - & — \\
+C09 & Linear gate vs Eq. 11-12 gate & P2 mean of 7 & +0.35 [-0.16, +0.94] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & -1.10 [-2.62, +0.44] & 1.000 & - & — \\
+C10 & Token attention vs pooled attention & P1 T+A+V & +0.23 [-0.50, +0.96] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & -0.90 [-3.55, +1.45] & 1.000 & - & — \\
+C10 & Token attention vs pooled attention & P2 mean of 7 & -0.30 [-0.94, +0.38] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & -1.04 [-2.57, +0.75] & 1.000 & - & — \\
+C11 & 2-layer vs 1-layer classifier & P1 T+A+V & +0.53 [-0.33, +1.35] & 1.000 & no detectable effect & Inconclusive & +1.44 [-1.37, +3.83] & 1.000 & - & — \\
+C11 & 2-layer vs 1-layer classifier & P2 mean of 7 & +0.66 [-0.04, +1.37] & 1.000 & no detectable effect & Inconclusive & +0.21 [-1.80, +2.03] & 1.000 & - & — \\
+C12 & LayerNorm in the projection & P1 T+A+V & +0.70 [-0.17, +1.52] & 1.000 & no detectable effect & Inconclusive & -1.15 [-3.66, +1.21] & 1.000 & - & — \\
+C12 & LayerNorm in the projection & P2 mean of 7 & +0.05 [-0.56, +0.58] & 1.000 & negligible (CI within $\pm$1 pp) & Bounded (CI within $\pm$1 pp) & -0.12 [-1.80, +1.50] & 1.000 & - & — \\
+C13 & Eq. 15 (available pairs) on M4 & P1 T+A+V & -0.98 [-2.06, +0.07] & 1.000 & no detectable effect & Inconclusive & -0.57 [-2.93, +2.34] & 1.000 & - & — \\
+C13 & Eq. 15 (available pairs) on M4 & P2 mean of 7 & -1.13 [-2.75, +0.19] & 1.000 & no detectable effect & Inconclusive & +0.49 [-0.93, +2.02] & 1.000 & - & — \\
+\bottomrule
+\end{tabularx}
+}
+\par\smallskip{\scriptsize Note: Replication requires the same sign, |MOSI effect| >= 1 pp and MOSI Holm p < .05 (Holm over the replication tests attempted).\par}
+\end{sidewaystable}

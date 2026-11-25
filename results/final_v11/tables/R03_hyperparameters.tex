@@ -1,0 +1,18 @@
+\begin{table}[h]
+\caption{TODO: write your own caption}\label{tab:R03-hyperparameters}
+\scriptsize
+\begin{tabularx}{\textwidth}{l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xl>{\raggedright\arraybackslash}X}
+\toprule
+notebook & scope & settings (as saved) & seeds & data file \\
+\midrule
+NB2 & MOSEI & D\_\allowbreak{}MODEL=128; EPOCHS=30; PATIENCE=6; BATCH\_\allowbreak{}SIZE=64; LR=0.0005; MOD\_\allowbreak{}DROPOUT=0.3; MASK\_\allowbreak{}SEEDS=[7, 8, 9, 10, 11]; N\_\allowbreak{}BOOT=10000; MISSING\_\allowbreak{}RATES=[0.3, 0.5, 0.7] & [42, 43, 44] & aligned\_\allowbreak{}50.pkl \\
+NB6 & MOSEI (v2 settings reused by NB3--NB6) & D\_\allowbreak{}MODEL=128; EPOCHS=30; PATIENCE=6; BATCH\_\allowbreak{}SIZE=64; LR=0.0005; MOD\_\allowbreak{}DROPOUT=0.3; n\_\allowbreak{}train=16326 & [42, 43, 44] & aligned\_\allowbreak{}50.pkl \\
+NB7 & MOSI & D\_\allowbreak{}MODEL=128; EPOCHS=30; PATIENCE=6; BATCH\_\allowbreak{}SIZE=64; LR=0.0005; MOD\_\allowbreak{}DROPOUT=0.3; threads=4 & [42, 43, 44] & aligned\_\allowbreak{}50.pkl \\
+NB8 & MOSI & D\_\allowbreak{}MODEL=128; EPOCHS=30; PATIENCE=6; BATCH\_\allowbreak{}SIZE=64; LR=0.0005; MOD\_\allowbreak{}DROPOUT=0.3; threads=4; lambda1=0.3 & [42, 43, 44] & aligned\_\allowbreak{}50.pkl \\
+NB8 & MOSEI & D\_\allowbreak{}MODEL=128; EPOCHS=30; PATIENCE=6; BATCH\_\allowbreak{}SIZE=64; LR=0.0005; MOD\_\allowbreak{}DROPOUT=0.3; threads=4; lambda1=0.3 & [42, 43, 44] & aligned\_\allowbreak{}50.pkl \\
+NB9 & Amazon text + heads & MODEL\_\allowbreak{}NAME=roberta-base; N\_\allowbreak{}PER\_\allowbreak{}CLASS\_\allowbreak{}PER\_\allowbreak{}CAT=2000; MAX\_\allowbreak{}LEN=128; EPOCHS=2; BATCH\_\allowbreak{}SIZE=32; LR\_\allowbreak{}ENCODER=2e-05; LR\_\allowbreak{}NEW=0.0001; GDRO\_\allowbreak{}ETA=0.01; IMG\_\allowbreak{}DROPOUT=0.3; D\_\allowbreak{}HEAD=256; HEAD\_\allowbreak{}EPOCHS=30; HEAD\_\allowbreak{}PATIENCE=5; HEAD\_\allowbreak{}LR=0.001; HEAD\_\allowbreak{}BS=64; CLIP\_\allowbreak{}NAME=openai/\allowbreak{}clip-vit-base-patch32 & [42, 43, 44] & split.csv (NB9) \\
+NB10 & Flipkart, IMDB, Yelp & MODEL\_\allowbreak{}NAME=roberta-base; MAX\_\allowbreak{}LEN=128; EPOCHS=2; BATCH\_\allowbreak{}SIZE=32; LR\_\allowbreak{}ENCODER=2e-05; LR\_\allowbreak{}NEW=0.0001 & [42, 43, 44] & per-dataset sizes: see records/\allowbreak{}all\_\allowbreak{}run\_\allowbreak{}configs\_\allowbreak{}verbatim.json \\
+\bottomrule
+\end{tabularx}
+\par\smallskip{\scriptsize Note: NB2--NB8 code also fixes AdamW (weight decay 1e-4), inverse-frequency class-weighted cross-entropy, gradient clipping at 1.0 and early stopping on validation macro-F1; these are in the notebook code, not in the saved settings.\par}
+\end{table}

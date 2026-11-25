@@ -1,0 +1,45 @@
+{\scriptsize
+\begin{xltabular}{\linewidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\caption{TODO: write your own caption}\label{tab:L01-limitations-negatives-unresolved} \\
+\toprule
+category & item & source \\
+\midrule
+\endfirsthead
+\toprule
+category & item & source \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Design limitation & 3 seeds per configuration; seed variance is part of every interval & all \\
+Design limitation & MOSEI test set examined repeatedly in NB2--NB8; MOSEI-only effects are partly exploratory & NB2--NB8 \\
+Design limitation & MOSI test set is small (686 clips); wide intervals & NB7, NB8 \\
+Design limitation & MOSEI/\allowbreak{}MOSI audio and video features are word-aligned to the transcript, so 'text missing' still assumes a transcript existed & aligned\_\allowbreak{}50 features \\
+Design limitation & Amazon: photo-containing reviews only, star-derived labels, balanced classes, simulated missing photos, 12,000 reviews & NB9 \\
+Design limitation & Amazon fusion heads use frozen encoders; the published EMO-FAR model (its encoders and its latency/\allowbreak{}fairness losses) was not reproduced & NB9 \\
+Design limitation & Fairness measured across two product categories only, not across groups of people & NB9 \\
+Design limitation & NB10 bootstrap resamples individual reviews (no product or business IDs in the data); intervals may be too narrow & NB10 \\
+Design limitation & Flipkart copy is mostly English (not code-mixed); Yelp test class balance 40/\allowbreak{}20/\allowbreak{}40 (neg/\allowbreak{}neu/\allowbreak{}pos \%); IMDB has two classes; ECCM domain anchoring inactive on these three & NB10 validation reports; project doc notebook10-design \\
+Design limitation & Latency measured only for the Amazon models, under one protocol; no latency for MOSEI/\allowbreak{}MOSI models & NB9 \\
+Design limitation & RAM of the experiment machines was not recorded & run\_\allowbreak{}info files \\
+Design limitation & Eq. 15 analysis is associational; criterion K4 can only detect a near-singular projection for M2/\allowbreak{}A0 & NB8b \\
+Design limitation & Amazon and NB10 prediction files store no sample identifiers; their order rests on the saved row order (asserted at run time in NB9) and exact recomputation of saved scores, not on identifier matching & R05 \\
+Design limitation & NB7 had no multiplicity correction in its pre-registered rule; the Holm correction applied here is post hoc & T08b \\
+Null, bounded or inconclusive result & ECCM cue-based processing vs minimally processed text (test macro-F1): Bounded (CI within $\pm$1 pp) $\times$3; Inconclusive & claim E2 \\
+Null, bounded or inconclusive result & Group-DRO vs standard training (Amazon): Bounded (CI within $\pm$1 pp); Inconclusive & claim E4 \\
+Null, bounded or inconclusive result & Photo fusion vs text only, and between fusion designs (Amazon): Bounded (CI within $\pm$1 pp) $\times$3; Inconclusive $\times$3 & claim E5 \\
+Null, bounded or inconclusive result & Real vs within-category shuffled test photos; all photos hidden vs none (F1 head): Bounded (CI within $\pm$1 pp) $\times$2 & claim E6 \\
+Null, bounded or inconclusive result & Single architectural changes between M2 and M4 (masking, gate formula, attention type, classifier depth, LayerNorm): Inconclusive $\times$9; Bounded (CI within $\pm$1 pp) $\times$7 & claim E11 \\
+Null, bounded or inconclusive result & Token attention (M4) vs pooled attention (B3), with parameter counts: Bounded (CI within $\pm$1 pp) & claim E12 \\
+Partly supported result & Re-fitted shared head (H2) on frozen M4 features vs M4's own output, text missing: MOSI V: Nominal only (CI excludes 0 without correction; not significant after post-hoc Holm); MOSI A+V: Supported (pre-registered; CI excludes 0; survives post-hoc Holm) & claim E13 \\
+Null, bounded or inconclusive result & Separate per-combination heads (H4) vs one re-fitted shared head (H2), text missing: MOSI V: Inconclusive (rule passed on non-significance; not equivalence); MOSI A+V: Inconclusive (rule passed on non-significance; not equivalence) & claim E14 \\
+Negative result for a base-paper component & Eq. 15 (published form) lowered MOSEI mean-of-7 macro-F1 (-6.97 pp); MOSI: opposite direction & claim E10 \\
+Negative result for a base-paper component & Conventional cleaning (paper-style preprocessing) scored lower than minimally processed text — Supported $\times$4: Amazon: minimally processed higher (+8.13 pp); Flipkart: minimally processed higher (+4.68 pp); IMDB: minimally processed higher (+1.39 pp); Yelp: minimally processed higher (+3.46 pp) & claim E1 \\
+Unresolved question & Replication of the C03 modality-dropout effect beyond MOSEI (MOSI status: same direction, not confirmed) & NB8 \\
+Unresolved question & Cause of Eq. 15's effect without text — would need a lambda1 sweep with retraining (not run) & NB8b \\
+Unresolved question & Whether ECCM helps on genuinely code-mixed review text (not tested) & NB10 \\
+Unresolved question & Whether the photo helps when the review text is very short or ambiguous (not tested) & NB9 \\
+Unresolved question & Overlap of the head re-fit result with published work (e.g. SCBC) — verify publication details and method before any claim & NB6, NB7 \\
+Note & NB6's saved verdict label 'EXPOSURE EXPLAINS IT' does not match its own numbers; the comparisons are used, the label is not & NB6 \\
+\end{xltabular}
+}

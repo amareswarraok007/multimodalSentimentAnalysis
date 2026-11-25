@@ -1,0 +1,7 @@
+dataset,id,with,without,effect [95% CI] (pp),Holm p,verdict,evidence
+Flipkart,T1-neg,R2,R1,"+7.10 [+4.20, +10.02]",0.0012,HELPS,Supported
+Flipkart,T2-neg,R3,R2,"+0.45 [-2.07, +2.97]",1.0000,no detectable effect,Inconclusive
+IMDB,T1-neg,R2,R1,"+1.40 [+0.97, +1.82]",0.0012,HELPS,Supported
+IMDB,T2-neg,R3,R2,"-0.13 [-0.31, +0.06]",0.4980,negligible (CI within ±1 pp),Bounded (CI within ±1 pp)
+Yelp,T1-neg,R2,R1,"+3.55 [+2.48, +4.64]",0.0012,HELPS,Supported
+Yelp,T2-neg,R3,R2,"-0.05 [-0.73, +0.51]",1.0000,negligible (CI within ±1 pp),Bounded (CI within ±1 pp)

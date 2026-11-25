@@ -1,0 +1,29 @@
+dataset,model,compared_to,parameters,removed,added,shape_changed,modality_dropout,eq15
+MOSEI,M2,M2,162947,-,-,-,0.0,-
+MOSEI,M3,M3,263558,-,-,-,0.0,-
+MOSEI,M4,M4,263558,-,-,-,0.3,-
+MOSEI,A0,M2,162947,-,-,-,0.0,published
+MOSEI,A1,M2,162947,-,-,-,0.0,-
+MOSEI,A2,M2,162947,-,-,-,0.3,-
+MOSEI,A3,M2,162947,-,-,-,0.3,-
+MOSEI,A4,M2,179459,-,cls.3,cls.1,0.0,-
+MOSEI,B1,M4,263558,-,-,-,0.3,-
+MOSEI,B2,M4,262787,gate,u,-,0.3,-
+MOSEI,B3,M4,164486,"xattn.audio, xattn.audio.out_proj, xattn.vision, xattn.vision.out_proj","wv.audio, wv.vision",-,0.3,-
+MOSEI,B4,M4,247046,cls.3,-,cls.1,0.3,-
+MOSEI,B5,M4,262790,"proj.audio.1, proj.text.1, proj.vision.1",-,-,0.3,-
+MOSEI,B6,M4,263558,-,-,-,0.3,valid_pairs
+MOSI,M2,M2,152195,-,-,-,0.0,-
+MOSI,M3,M3,252806,-,-,-,0.0,-
+MOSI,M4,M4,252806,-,-,-,0.3,-
+MOSI,A0,M2,152195,-,-,-,0.0,published
+MOSI,A1,M2,152195,-,-,-,0.0,-
+MOSI,A2,M2,152195,-,-,-,0.3,-
+MOSI,A3,M2,152195,-,-,-,0.3,-
+MOSI,A4,M2,168707,-,cls.3,cls.1,0.0,-
+MOSI,B1,M4,252806,-,-,-,0.3,-
+MOSI,B2,M4,252035,gate,u,-,0.3,-
+MOSI,B3,M4,153734,"xattn.audio, xattn.audio.out_proj, xattn.vision, xattn.vision.out_proj","wv.audio, wv.vision",-,0.3,-
+MOSI,B4,M4,236294,cls.3,-,cls.1,0.3,-
+MOSI,B5,M4,252038,"proj.audio.1, proj.text.1, proj.vision.1",-,-,0.3,-
+MOSI,B6,M4,252806,-,-,-,0.3,valid_pairs

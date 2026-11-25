@@ -1,0 +1,9 @@
+dataset,comparison,effect [95% CI] (pp),Holm p,family,verdict,evidence
+Amazon,Minimally processed − conventional,"+8.13 [+6.33, +9.93]",0.0008,"NB9 text family (4 tests, Holm)",HELPS,Supported
+Amazon,ECCM cues − minimally processed,"-0.14 [-0.88, +0.64]",1.0000,"NB9 text family (4 tests, Holm)",negligible (CI within ±1 pp),Bounded (CI within ±1 pp)
+Flipkart,Minimally processed − conventional,"+4.68 [+2.74, +6.64]",0.0012,"NB10 primary family (6 tests, Holm)",HELPS,Supported
+Flipkart,ECCM cues − minimally processed,"+0.60 [-0.66, +1.92]",0.6603,"NB10 primary family (6 tests, Holm)",no detectable effect,Inconclusive
+IMDB,Minimally processed − conventional,"+1.39 [+1.01, +1.78]",0.0012,"NB10 primary family (6 tests, Holm)",HELPS,Supported
+IMDB,ECCM cues − minimally processed,"-0.12 [-0.30, +0.06]",0.5351,"NB10 primary family (6 tests, Holm)",negligible (CI within ±1 pp),Bounded (CI within ±1 pp)
+Yelp,Minimally processed − conventional,"+3.46 [+2.55, +4.38]",0.0012,"NB10 primary family (6 tests, Holm)",HELPS,Supported
+Yelp,ECCM cues − minimally processed,"-0.11 [-0.60, +0.34]",0.6603,"NB10 primary family (6 tests, Holm)",negligible (CI within ±1 pp),Bounded (CI within ±1 pp)

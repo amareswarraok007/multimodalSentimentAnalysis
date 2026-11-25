@@ -1,0 +1,7 @@
+dataset,modalities,train,valid,test,test groups,classes (test neg/neu/pos),source
+MOSEI,"text, audio, video (pre-extracted aligned_50 features)",16326,1871,4659,676 videos,1350/1025/2284,NB8 label files; train: NB3–NB6 run_info (n_train)
+MOSI,"text, audio, video (pre-extracted aligned_50 features)",1284,229,686,31 videos,379/30/277,NB8 label files; train: MOSI data file (aligned_50.pkl)
+"Amazon Reviews 2023 (Fashion + Beauty, with photo)","text, photo",8367,1800,1833,1585 products,588/617/628,NB9 split.csv
+Flipkart,text,40000,5000,5000,individual reviews,1006/246/3748,NB10 Flipkart/validation_report.json
+IMDB,text,22414,2490,24678,individual reviews,12266/—/12412,NB10 IMDB/validation_report.json
+Yelp,text,79999,10001,10000,individual reviews,3998/2020/3982,NB10 Yelp/validation_report.json

@@ -1,0 +1,18 @@
+\begin{sidewaystable}
+\caption{TODO: write your own caption}\label{tab:T17-amazon-params-latency}
+\scriptsize
+\begin{tabularx}{\textheight}{l>{\raggedright\arraybackslash}Xrrrrrrrr}
+\toprule
+model & name & params head & params text enc. & params CLIP & params total & ms head & ms text enc. & ms CLIP & ms total \\
+\midrule
+T0 & T0 text-only head & 2307 & 124651782 & 0 & 124654089 & 0.004691 & 0.8645 & 0 & 0.8692 \\
+IMG & IMG photo-only head & 197635 & 0 & 87456000 & 87653635 & 0.006132 & 0 & 0.3705 & 0.3766 \\
+CAT & CAT concatenation & 394243 & 124651782 & 87456000 & 212502025 & 0.00648 & 0.8645 & 0.3705 & 1.241 \\
+F1 & F1 RMSR adaptation & 592387 & 124651782 & 87456000 & 212700169 & 0.01309 & 0.8645 & 0.3705 & 1.248 \\
+SHUF & SHUF shuffled-photo control & 592387 & 124651782 & 87456000 & 212700169 & 0.01291 & 0.8645 & 0.3705 & 1.248 \\
+F3 & F3 pooled attention & 462341 & 124651782 & 87456000 & 212570123 & 0.01398 & 0.8645 & 0.3705 & 1.249 \\
+F2 & F2 token cross-attention & 659717 & 124651782 & 87456000 & 212767499 & 0.02775 & 0.8645 & 0.3705 & 1.263 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip{\scriptsize Note: ms = milliseconds per review; columns renamed from NB9's file. Excluded: photo download, image pre-processing, tokenisation. Latency was not measured for the MOSEI/\allowbreak{}MOSI models.\par}
+\end{sidewaystable}
